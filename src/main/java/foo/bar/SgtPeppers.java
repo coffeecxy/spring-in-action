@@ -2,7 +2,7 @@ package foo.bar;
 
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class SgtPeppers implements CompactDisc {
     private String title = "sgt. apapappa";
     private String artist = "the beat";

@@ -11,13 +11,7 @@ public class HelloApp {
 //        ApplicationContext context = new ClassPathXmlApplicationContext("spring-config.xml");
         ApplicationContext context = new AnnotationConfigApplicationContext(foo.bar.CDPlayerConfig.class);
 
-        CompactDisc player = (CompactDisc) context.getBean("sgtPeppers");
+        MediaPlayer player = (MediaPlayer) context.getBean("cdPlayer");
         player.play();
-
-        int cnt = context.getBeanDefinitionCount();
-
-
-        System.out.println(cnt);
-
     }
 }
